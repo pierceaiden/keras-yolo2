@@ -2,18 +2,18 @@
     "model" : {
         "backend":              "Full Yolo",
         "input_size":           416,
-        "anchors":              [1.57,1.77, 2.80,8.62, 3.60,3.36, 5.51,10.50, 9.22,11.30],
+        "anchors":              [1.43,1.60, 2.83,3.11, 3.42,9.38, 5.65,4.57, 7.72,11.48],
         "max_box_per_image":    10,        
         "labels":               ["person","helmet"]
     },
 
     "train": {
-        "train_image_folder":   "train_image_folder\\",
-        "train_annot_folder":   "train_annot_folder\\",     
+        "train_image_folder":   "train_image_folder\/",
+        "train_annot_folder":   "train_annot_folder\/",     
           
         "train_times":          10,
         "pretrained_weights":   "",
-        "batch_size":           16,
+        "batch_size":           20,
         "learning_rate":        1e-4,
         "nb_epochs":            50,
         "warmup_epochs":        3,
