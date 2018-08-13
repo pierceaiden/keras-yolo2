@@ -4,7 +4,7 @@
         "input_size":           416,
         "anchors":              [1.43,1.60, 2.83,3.11, 3.42,9.38, 5.65,4.57, 7.72,11.48],
         "max_box_per_image":    10,        
-        "labels":               ["person","helmet"]
+        "labels":               ["helmet","person with helmet","person without helmet"]
     },
 
     "train": {
