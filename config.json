@@ -2,7 +2,7 @@
     "model" : {
         "backend":              "Full Yolo",
         "input_size":           416,
-        "anchors":              [1.43,1.60, 2.83,3.11, 3.42,9.38, 5.65,4.57, 7.72,11.48],
+        "anchors":              [1.37,1.64, 2.14,7.96, 3.16,3.15, 4.29,9.86, 7.84,10.85],
         "max_box_per_image":    10,        
         "labels":               ["helmet","person with helmet","person without helmet"]
     },
