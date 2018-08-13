@@ -64,7 +64,12 @@ def draw_boxes(image, boxes, labels):
         xmax = int(box.xmax*image_w)
         ymax = int(box.ymax*image_h)
 
-        cv2.rectangle(image, (xmin,ymin), (xmax,ymax), (0,255,0), 3)
+        color = (0,0,255)
+        if box.get_label() == 0:
+            color = (255,0,0)
+        elif box.get_label() == 1:
+            color = (0,255,0)
+        cv2.rectangle(image, (xmin,ymin), (xmax,ymax), color, 3)
         cv2.putText(image, 
                     labels[box.get_label()] + ' ' + str(box.get_score()), 
                     (xmin, ymin - 13), 
